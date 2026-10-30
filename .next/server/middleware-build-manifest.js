@@ -1,22 +1,113 @@
-self.__BUILD_MANIFEST = {
-  "polyfillFiles": [
-    "static/chunks/polyfills.js"
-  ],
-  "devFiles": [],
-  "ampDevFiles": [],
-  "lowPriorityFiles": [],
-  "rootMainFiles": [
-    "static/chunks/webpack.js",
-    "static/chunks/main-app.js"
-  ],
-  "rootMainFilesTree": {},
+globalThis.__BUILD_MANIFEST = {
   "pages": {
     "/_app": []
   },
-  "ampFirstPages": []
+  "devFiles": [],
+  "polyfillFiles": [
+    "static/chunks/0cz1d0mv5g_q7.js"
+  ],
+  "lowPriorityFiles": [
+    "static/6RRc6nFFUa1zoloEjqwHj/_buildManifest.js",
+    "static/6RRc6nFFUa1zoloEjqwHj/_ssgManifest.js",
+    "static/6RRc6nFFUa1zoloEjqwHj/_clientMiddlewareManifest.js"
+  ],
+  "rootMainFiles": [
+    "static/chunks/0bjdocm-i2c1y.js",
+    "static/chunks/20fvup-l03-f_.js",
+    "static/chunks/06im2sfidn_yg.js",
+    "static/chunks/27-phkecpc5q1.js",
+    "static/chunks/turbopack-2c3mg3r-05n1w.js"
+  ],
+  "rootMainFilesTree": {},
+  "pagesChunkGroupBootstrapParams": {
+    "/page": {
+      "otherChunks": [
+        "static/chunks/0bjdocm-i2c1y.js",
+        "static/chunks/20fvup-l03-f_.js",
+        "static/chunks/06im2sfidn_yg.js",
+        "static/chunks/27-phkecpc5q1.js"
+      ],
+      "runtimeModuleIds": [
+        24781
+      ]
+    },
+    "/_not-found/page": {
+      "otherChunks": [
+        "static/chunks/0bjdocm-i2c1y.js",
+        "static/chunks/20fvup-l03-f_.js",
+        "static/chunks/06im2sfidn_yg.js",
+        "static/chunks/27-phkecpc5q1.js"
+      ],
+      "runtimeModuleIds": [
+        24781
+      ]
+    },
+    "/_global-error/page": {
+      "otherChunks": [
+        "static/chunks/0bjdocm-i2c1y.js",
+        "static/chunks/20fvup-l03-f_.js",
+        "static/chunks/06im2sfidn_yg.js",
+        "static/chunks/27-phkecpc5q1.js"
+      ],
+      "runtimeModuleIds": [
+        24781
+      ]
+    },
+    "/about/page": {
+      "otherChunks": [
+        "static/chunks/0bjdocm-i2c1y.js",
+        "static/chunks/20fvup-l03-f_.js",
+        "static/chunks/06im2sfidn_yg.js",
+        "static/chunks/27-phkecpc5q1.js"
+      ],
+      "runtimeModuleIds": [
+        24781
+      ]
+    },
+    "/contact/page": {
+      "otherChunks": [
+        "static/chunks/0bjdocm-i2c1y.js",
+        "static/chunks/20fvup-l03-f_.js",
+        "static/chunks/06im2sfidn_yg.js",
+        "static/chunks/27-phkecpc5q1.js"
+      ],
+      "runtimeModuleIds": [
+        24781
+      ]
+    },
+    "/projects/page": {
+      "otherChunks": [
+        "static/chunks/0bjdocm-i2c1y.js",
+        "static/chunks/20fvup-l03-f_.js",
+        "static/chunks/06im2sfidn_yg.js",
+        "static/chunks/27-phkecpc5q1.js"
+      ],
+      "runtimeModuleIds": [
+        24781
+      ]
+    },
+    "/services/page": {
+      "otherChunks": [
+        "static/chunks/0bjdocm-i2c1y.js",
+        "static/chunks/20fvup-l03-f_.js",
+        "static/chunks/06im2sfidn_yg.js",
+        "static/chunks/27-phkecpc5q1.js"
+      ],
+      "runtimeModuleIds": [
+        24781
+      ]
+    },
+    "/services/[slug]/page": {
+      "otherChunks": [
+        "static/chunks/0bjdocm-i2c1y.js",
+        "static/chunks/20fvup-l03-f_.js",
+        "static/chunks/06im2sfidn_yg.js",
+        "static/chunks/27-phkecpc5q1.js"
+      ],
+      "runtimeModuleIds": [
+        24781
+      ]
+    }
+  },
+  "chunkLoadingGlobal": "TURBOPACK"
 };
-self.__BUILD_MANIFEST.lowPriorityFiles = [
-"/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
-,"/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js",
-
-];

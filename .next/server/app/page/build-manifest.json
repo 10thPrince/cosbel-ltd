@@ -1,0 +1,22 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [
+    "static/chunks/0cz1d0mv5g_q7.js"
+  ],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [
+    "static/chunks/0bjdocm-i2c1y.js",
+    "static/chunks/20fvup-l03-f_.js",
+    "static/chunks/06im2sfidn_yg.js",
+    "static/chunks/27-phkecpc5q1.js",
+    "static/chunks/turbopack-2c3mg3r-05n1w.js"
+  ],
+  "pages": {},
+  "ampFirstPages": [],
+  "rootMainFilesTree": {},
+  "pagesChunkGroupBootstrapParams": {
+    "/page": {"otherChunks":["static/chunks/0bjdocm-i2c1y.js","static/chunks/20fvup-l03-f_.js","static/chunks/06im2sfidn_yg.js","static/chunks/27-phkecpc5q1.js"],"runtimeModuleIds":[24781]}
+  },
+  "chunkLoadingGlobal": "TURBOPACK"
+}

@@ -1,0 +1,19 @@
+{"timestamp":"00:00:20.596","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:20.596","source":"Server","level":"LOG","message":"  We detected TypeScript in your project and reconfigured your tsconfig.json file for you."}
+{"timestamp":"00:00:20.597","source":"Server","level":"LOG","message":"  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:\n"}
+{"timestamp":"00:00:20.597","source":"Server","level":"LOG","message":"  \t- include was updated to add '.next/dev/types/**/*.ts'"}
+{"timestamp":"00:00:20.597","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:20.598","source":"Server","level":"LOG","message":"  The following mandatory changes were made to your tsconfig.json:\n"}
+{"timestamp":"00:00:20.598","source":"Server","level":"LOG","message":"  \t- jsx was set to react-jsx (next.js uses the React automatic runtime)"}
+{"timestamp":"00:00:20.598","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:20.970","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:24.028","source":"Server","level":"LOG","message":"○ Compiling /projects ..."}
+{"timestamp":"00:00:27.677","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:35.348","source":"Browser","level":"WARN","message":"Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\"smooth\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior"}
+{"timestamp":"00:00:36.428","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mDetected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior=\\\"smooth\\\"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior\\u001b[39m\""}
+{"timestamp":"00:23:51.442","source":"Server","level":"LOG","message":"✓ Compiled in 1390ms"}
+{"timestamp":"00:24:03.545","source":"Server","level":"LOG","message":"✓ Compiled in 2.5s"}
+{"timestamp":"00:44:25.169","source":"Server","level":"LOG","message":"✓ Compiled in 283ms"}
+{"timestamp":"00:44:43.435","source":"Server","level":"LOG","message":"✓ Compiled in 879ms"}
+{"timestamp":"00:44:51.291","source":"Server","level":"LOG","message":"✓ Compiled in 884ms"}
+{"timestamp":"00:47:58.207","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}

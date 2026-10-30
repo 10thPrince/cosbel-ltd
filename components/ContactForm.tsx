@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { services } from "@/lib/data";
 import { ui } from "@/lib/ui";
-const inp = "w-full rounded-xl border border-line bg-bg p-3 focus:border-brand2 text-fg";
+const inp = "w-full rounded-xl border border-line bg-white p-3 focus:border-brand2 text-fg";
 type Errs = Record<string, string>;
 function F({ id, label, err, children }: { id: string; label: string; err?: string; children: React.ReactNode }) {
   return (<div><label htmlFor={id} className="mb-1 block font-bold">{label}</label>{children}{err && <p className="mt-1 text-sm text-red-600" role="alert">{err}</p>}</div>);

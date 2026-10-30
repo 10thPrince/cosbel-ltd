@@ -1,25 +1,19 @@
 @import "tailwindcss";
 
-@theme inline {
+@theme {
   --color-brand: #0b2a5b;
   --color-brand2: #1f6fd1;
   --color-navy: #0e1a2f;
   --color-accent: #f28c28;
-  --color-bg: var(--bg);
-  --color-fg: var(--fg);
-  --color-line: var(--line);
-  --color-mist: var(--mist);
+  --color-bg: #ffffff;
+  --color-fg: #0e1a2f;
+  --color-line: #e3e9f2;
+  --color-mist: #f4f7fb;
   --animate-fade-up: fade-up .7s ease-out both;
   @keyframes fade-up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
 }
-:root { --bg: #fff; --fg: #0e1a2f; --line: #e3e9f2; --mist: #f4f7fb; }
-@media (prefers-color-scheme: dark) { :root { --bg: #0a1424; --fg: #e8eef8; --line: #22324d; --mist: #0f1d33; } }
+:root { color-scheme: light; }
 html { scroll-behavior: smooth; }
-body { background: var(--bg); color: var(--fg); line-height: 1.65; -webkit-font-smoothing: antialiased; }
-.page-hero {
-  background-image: linear-gradient(90deg, rgb(11 42 91 / 96%) 0%, rgb(11 42 91 / 82%) 48%, rgb(11 42 91 / 38%) 100%), url("/images/electrical-6.jpg");
-  background-position: center;
-  background-size: cover;
-}
+body { background: #fff; color: #0e1a2f; line-height: 1.65; -webkit-font-smoothing: antialiased; }
 :focus-visible { outline: 3px solid #f28c28; outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
