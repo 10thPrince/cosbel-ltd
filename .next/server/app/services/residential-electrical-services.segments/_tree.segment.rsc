@@ -1,5 +1,5 @@
-:HL["/_next/static/chunks/0roq2mg_gtllb.css","style"]
+:HL["/_next/static/chunks/1_bv7dugekgid.css","style"]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":{"n":"slug","t":"d","k":"residential-electrical-services","s":[]},"h":96,"c":"$Q3"}]]
-1:[["children",{"s":"services","h":96,"c":"$Q2"}]]
-0:{"b":"6RRc6nFFUa1zoloEjqwHj","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+1:[["children",{"s":"services","h":64,"c":"$Q2"}]]
+0:{"b":"2LQNAxqb_E2vLhCqLElji","t":{"t":{"s":"","h":16,"c":"$Q1"}}}

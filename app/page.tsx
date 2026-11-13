@@ -11,8 +11,8 @@ import { pageMeta, abs, bizId } from "@/lib/seo";
 import { ui } from "@/lib/ui";
 export const metadata: Metadata = {
   ...pageMeta({ title: "Electrical Services in Kigali, Rwanda", path: "/",
-    description: "COSBEL Ltd offers industrial, residential and commercial electrical installation and maintenance in Kigali, Rwanda. Call +250 788 312 434 for a quote.",
-    keywords: ["electrical services Kigali", "industrial electrical services Rwanda", "residential electrical installation Kigali", "electrician Kigali", "COSBEL Ltd"] }),
+    description: "COSBEL Ltd is an electrical engineering company in Kigali, Rwanda: compact substations, underground cabling, ATS and generator systems, industrial equipment commissioning and power distribution design. Call +250 788 312 434 for a quote.",
+    keywords: ["electrical engineering company Kigali", "substation installation Rwanda", "ATS manufacturer Rwanda", "industrial electrical services Rwanda", "residential electrical installation Kigali", "electrician Kigali", "COSBEL Ltd"] }),
   title: { absolute: "Electrical Services in Kigali, Rwanda | COSBEL Ltd" },
 };
 const chips = ["Industrial, residential & commercial", "Installation & maintenance", "Based in Kimironko, Kigali"];

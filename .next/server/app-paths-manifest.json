@@ -5,6 +5,7 @@
   "/api/contact/route": "app/api/contact/route.js",
   "/contact/page": "app/contact/page.js",
   "/icon.svg/route": "app/icon.svg/route.js",
+  "/llms.txt/route": "app/llms.txt/route.js",
   "/manifest.webmanifest/route": "app/manifest.webmanifest/route.js",
   "/opengraph-image/route": "app/opengraph-image/route.js",
   "/page": "app/page.js",

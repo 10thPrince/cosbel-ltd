@@ -9,7 +9,7 @@ export const viewport: Viewport = { themeColor: "#ffffff", width: "device-width"
 export const metadata: Metadata = {
   metadataBase: new URL(company.site),
   title: { default: "Electrical Services in Kigali, Rwanda | COSBEL Ltd", template: "%s | COSBEL Ltd" },
-  description: "COSBEL Ltd offers industrial, residential and commercial electrical installation and maintenance in Kigali, Rwanda.",
+  description: "COSBEL Ltd is an electrical engineering company in Kigali, Rwanda: compact substations, underground cabling, ATS and generator systems, industrial equipment commissioning and power distribution design.",
   applicationName: "COSBEL Ltd", authors: [{ name: "COSBEL Ltd" }], creator: "COSBEL Ltd", publisher: "COSBEL Ltd",
   formatDetection: { telephone: true, email: true },
   verification: { google: process.env.GOOGLE_SITE_VERIFICATION },
