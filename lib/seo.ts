@@ -19,7 +19,7 @@ export const business = () => ({
   name: company.name, url: company.site, logo: abs("/icon.svg"),
   image: [photos.switchgear, photos.board, photos.tray].map((p) => abs(p.src)),
   description: "Electrical installation and maintenance for industrial, residential and commercial customers in Kigali, Rwanda.",
-  telephone: "+250788312434", email: company.email, taxID: company.tin,
+  telephone: "+250788312434", email: company.email,
   address: { "@type": "PostalAddress", addressLocality: "Kimironko, Gasabo", addressRegion: "Kigali", addressCountry: "RW" },
   areaServed: [{ "@type": "City", name: "Kigali" }, { "@type": "Country", name: "Rwanda" }],
   contactPoint: { "@type": "ContactPoint", telephone: "+250788312434", email: company.email, contactType: "customer service", areaServed: "RW", availableLanguage: ["en", "rw"] },
