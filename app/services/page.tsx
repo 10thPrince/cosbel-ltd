@@ -3,6 +3,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import ServiceCard from "@/components/ServiceCard";
 import { services, photos } from "@/lib/data";
+import Image from "next/image";
 import { pageMeta, abs } from "@/lib/seo";
 import { ui } from "@/lib/ui";
 export const metadata = pageMeta({ title: "Electrical Services in Kigali & Rwanda", path: "/services", image: photos.switchgear,
@@ -11,5 +12,7 @@ export const metadata = pageMeta({ title: "Electrical Services in Kigali & Rwand
 export default function Services() {
   return (<><JsonLd data={{ "@context": "https://schema.org", "@type": "ItemList", itemListElement: services.map((s, i) => ({ "@type": "ListItem", position: i + 1, url: abs(`/services/${s.slug}`), name: s.title })) }} />
     <section className={ui.pageHero}><div className={ui.wrap}><Breadcrumbs trail={[["Services", "/services"]]} /><h1 className={ui.pageH1}>Electrical Services in Kigali</h1><p className={ui.pageP}>What COSBEL Ltd can do for your facility, home or business.</p></div></section>
-    <section className={ui.sec}><div className={`${ui.wrap} grid gap-6 sm:grid-cols-2 lg:grid-cols-4`}>{services.map((s) => <ServiceCard key={s.slug} s={s} />)}</div></section><Cta /></>);
+    <section className={ui.sec}><div className={ui.wrap}>
+      <Image src={photos.substation.src} alt={photos.substation.alt} width={1600} height={1200} priority sizes="100vw" className="mb-10 aspect-\[21/9\] w-full rounded-3xl object-cover shadow-xl" />
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">{services.map((s) => <ServiceCard key={s.slug} s={s} />)}</div></div></section><Cta /></>);
 }

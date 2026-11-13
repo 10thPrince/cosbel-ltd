@@ -2,6 +2,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
 import ProjectsGallery from "@/components/ProjectsGallery";
+import SiteGallery from "@/components/SiteGallery";
 import { pageMeta, abs } from "@/lib/seo";
 import { ui } from "@/lib/ui";
 
@@ -34,6 +35,13 @@ export default function Projects() {
           </div>
 
           <ProjectsGallery />
+
+          <div className="mt-16">
+            <p className={ui.eyebrow}>On site</p>
+            <h2 className={ui.h2}>Gallery from our work</h2>
+            <p className="mb-8 mt-2 max-w-2xl text-fg/70">Photos taken on COSBEL Ltd job sites: substations, transformers, cabling and the team at work.</p>
+            <SiteGallery />
+          </div>
 
           <div className="mt-12 max-w-2xl rounded-3xl border border-line bg-mist p-8">
             <p className={ui.eyebrow}>Need a similar result?</p>

@@ -9,6 +9,6 @@ export default function Footer() {
     <div><Logo /><p className="mt-4 text-fg/70">Electrical services for industrial, residential and commercial customers in Kigali, Rwanda.</p></div>
     <div><h3 className={h}>Company</h3>{[["/", "Home"], ["/about", "About Us"], ["/services", "Services"], ["/projects", "Projects"], ["/contact", "Contact"]].map(([p, t]) => <Link key={p} href={p} className={l}>{t}</Link>)}</div>
     <div><h3 className={h}>Services</h3>{services.map((s) => <Link key={s.slug} href={`/services/${s.slug}`} className={l}>{s.title}</Link>)}</div>
-    <div><h3 className={h}>Contact</h3><a href={company.tel} className={l}>{company.phone}</a><a href={company.mailto} className={l}>{company.email}</a><span className="mb-2 block text-fg/70">{company.location}</span><span className="block text-fg/70">TIN: {company.tin}</span></div>
+    <div><h3 className={h}>Contact</h3><a href={company.tel} className={l}>{company.phone}</a><a href={company.mailto} className={l}>{company.email}</a><span className="mb-2 block text-fg/70">{company.location}</span></div>
   </div><div className={`${ui.wrap} mt-12 border-t border-line pt-5 text-sm text-fg/60`}>© {new Date().getFullYear()} COSBEL Ltd. All rights reserved.</div></footer>);
 }
