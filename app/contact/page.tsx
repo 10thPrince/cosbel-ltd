@@ -1,7 +1,8 @@
 import ContactForm from "@/components/ContactForm";
+import Image from "next/image";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import JsonLd from "@/components/JsonLd";
-import { company } from "@/lib/data";
+import { company, photos } from "@/lib/data";
 import { pageMeta, abs, bizId } from "@/lib/seo";
 import { ui } from "@/lib/ui";
 export const metadata = pageMeta({ title: "Contact & Electrical Quote in Kigali", path: "/contact",
@@ -14,5 +15,8 @@ export default function Contact() {
     <section className={ui.sec}><div className={`${ui.wrap} grid items-start gap-12 md:grid-cols-2`}>
       <div><address className="leading-8 not-italic text-fg/80"><strong>COSBEL Ltd</strong><br />{company.location}<br />Telephone: <a className={a} href={company.tel}>{company.phone}</a><br />Email: <a className={a} href={company.mailto}>{company.email}</a></address>
         <iframe className="mt-5 h-72 w-full rounded-2xl border-0" title="Map of Kimironko, Kigali" loading="lazy" src="https://www.google.com/maps?q=Kimironko,Kigali,Rwanda&output=embed" /></div>
-      <ContactForm /></div></section></>);
+      <ContactForm /></div></section>
+    <section className={ui.secAlt}><div className={ui.wrap}>
+      <Image src={photos.crew.src} alt={photos.crew.alt} width={1200} height={1600} loading="lazy" sizes="(min-width:1024px) 480px, 100vw" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-xl" />
+      <p className="mt-4 max-w-xl text-fg/70">Our technicians on site: cable laying and civil works are a normal part of every underground installation we deliver.</p></div></section></>);
 }

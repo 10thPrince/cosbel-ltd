@@ -16,7 +16,7 @@ export function pageMeta(o: { title: string; description: string; path: string; 
 export const bizId = () => abs("/#business");
 export const business = () => ({
   "@context": "https://schema.org", "@type": ["Electrician", "LocalBusiness"], "@id": bizId(),
-  name: company.name, url: company.site, logo: abs("/icon.svg"),
+  name: company.name, url: company.site, logo: abs("/icon-512.png"),
   image: [photos.switchgear, photos.board, photos.tray].map((p) => abs(p.src)),
   description: "Electrical installation and maintenance for industrial, residential and commercial customers in Kigali, Rwanda.",
   telephone: "+250788312434", email: company.email,

@@ -1,12 +1,11 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 import { ui } from "@/lib/ui";
 export function Logo() {
-  return (<Link href="/" aria-label="COSBEL Ltd home" className="flex items-center gap-2 text-xl font-extrabold text-brand2 no-underline">
-    {/* Replace with the official logo file, e.g. <Image src="/logo.png" ... /> */}
-    <svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z" fill="currentColor" /></svg>
-    <span className="text-brand">COSBEL <small className="font-medium text-brand2">Ltd</small></span></Link>);
+  return (<Link href="/" aria-label="COSBEL Ltd home" className="flex items-center no-underline">
+    <Image src="/logo.webp" alt="COSBEL Ltd logo" width={2060} height={624} priority sizes="140px" className="h-9 w-auto" /></Link>);
 }
 const nav = [["/", "Home"], ["/about", "About Us"], ["/services", "Services"], ["/projects", "Projects"], ["/contact", "Contact"]];
 export default function Header() {

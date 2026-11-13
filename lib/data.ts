@@ -17,15 +17,54 @@ export const company = {
     return "http://localhost:3000";
   })(),
 };
-// Supplied reference photos. Swap for COSBEL's own photos before launch (same keys).
+// Real COSBEL site photos (client's Drive, GPS data stripped, optimized for web).
 export const photos: Record<string, Photo> = {
-  board: { src: "/images/electrical-distribution-board.jpg", w: 392, h: 510, alt: "Electrical distribution board with circuit breakers and neatly routed wiring" },
-  tray: { src: "/images/cable-tray-installation.jpg", w: 669, h: 457, alt: "Steel cable trays carrying power cables along a building ceiling" },
-  switchgear: { src: "/images/industrial-switchgear-panel.jpg", w: 387, h: 516, alt: "Industrial medium-voltage switchgear panels with protection relays" },
-  control: { src: "/images/control-panel-terminals.jpg", w: 678, h: 452, alt: "Control panel circuit breakers and terminal blocks with colour-coded wiring" },
-  transformer: { src: "/images/pole-mounted-transformer.jpg", w: 547, h: 365, alt: "Pole-mounted electrical transformer with insulators against a blue sky" },
-  wiring: { src: "/images/panel-wiring-terminals.jpg", w: 547, h: 365, alt: "Close-up of blue and green wiring connected to electrical terminal blocks" },
+  board: { src: "/images/site/distribution-board-breakers.jpg", w: 1600, h: 1200, alt: "COSBEL Ltd electrical distribution board with circuit breakers and neatly routed wiring" },
+  tray: { src: "/images/site/underground-cable-trench.jpg", w: 1200, h: 1600, alt: "Underground power cable laid in a prepared trench at a COSBEL Ltd work site" },
+  switchgear: { src: "/images/site/ring-main-unit.jpg", w: 1200, h: 1600, alt: "Ring main unit installed at an industrial substation in Rwanda" },
+  control: { src: "/images/site/control-panel-breakers.jpg", w: 1200, h: 1600, alt: "Industrial control panel with circuit breakers and colour-coded wiring wired by COSBEL Ltd" },
+  transformer: { src: "/images/site/transformer-hv-bushings.jpg", w: 1200, h: 1600, alt: "Distribution transformer with high-voltage bushings installed on a steel structure" },
+  wiring: { src: "/images/site/cable-trench-structures.jpg", w: 1200, h: 1600, alt: "Cable trench between steel structures at a substation construction site" },
+  substation: { src: "/images/site/substation-under-construction.jpg", w: 1600, h: 1200, alt: "Compact substation under construction with transformers and high-voltage structures" },
+  yard: { src: "/images/site/substation-yard-structures.jpg", w: 1200, h: 1600, alt: "Substation yard with power equipment mounted on steel structures" },
+  rmu: { src: "/images/site/rmu-interior-busbars.jpg", w: 1600, h: 1200, alt: "Open ring main unit cabinet showing busbars and cable terminations" },
+  crew: { src: "/images/site/crew-laying-cable-trench.jpg", w: 1200, h: 1600, alt: "COSBEL Ltd technicians laying power cable in an excavated trench" },
 };
+
+// General site photo gallery shown on the projects page (photos not used on other pages).
+export const gallery: { src: string; alt: string }[] = [
+  { src: "/images/site/substation-under-construction.jpg", alt: "Compact substation under construction with transformers and high-voltage structures" },
+  { src: "/images/site/substation-yard-structures.jpg", alt: "Substation yard with power equipment mounted on steel structures" },
+  { src: "/images/site/substation-steel-structures.jpg", alt: "High-voltage steel structures ready for equipment installation" },
+  { src: "/images/site/ring-main-unit.jpg", alt: "Ring main unit installed at an industrial substation" },
+  { src: "/images/site/rmu-interior-busbars.jpg", alt: "Open ring main unit cabinet showing busbars and cable terminations" },
+  { src: "/images/site/transformer-hv-bushings.jpg", alt: "Distribution transformer with high-voltage bushings" },
+  { src: "/images/site/transformer-rmu-plinth.jpg", alt: "Transformer and ring main unit mounted on a concrete plinth" },
+  { src: "/images/site/transformer-hv-connection-work.jpg", alt: "Technicians making high-voltage connections on a transformer" },
+  { src: "/images/site/crew-scaffold-transformer.jpg", alt: "COSBEL Ltd crew working from scaffolding on transformer installation" },
+  { src: "/images/site/hv-bushing-connection-work.jpg", alt: "Technician connecting high-voltage bushing on a transformer" },
+  { src: "/images/site/crew-transformer-top.jpg", alt: "COSBEL Ltd technicians working on top of a transformer unit" },
+  { src: "/images/site/engineer-hv-isolator.jpg", alt: "COSBEL Ltd engineer beside a high-voltage isolator structure" },
+  { src: "/images/site/crew-substation-yard-1.jpg", alt: "COSBEL Ltd technician in protective gear in a substation yard" },
+  { src: "/images/site/crew-substation-yard-2.jpg", alt: "COSBEL Ltd technician at work in a substation yard" },
+  { src: "/images/site/crew-substation-yard-3.jpg", alt: "COSBEL Ltd engineer standing by high-voltage equipment" },
+  { src: "/images/site/crew-substation-yard-4.jpg", alt: "COSBEL Ltd technician wearing safety helmet in a substation yard" },
+  { src: "/images/site/crew-substation-yard-5.jpg", alt: "COSBEL Ltd technician beside a high-voltage structure" },
+  { src: "/images/site/crew-engineer-transformer.jpg", alt: "COSBEL Ltd engineer on site next to a transformer" },
+  { src: "/images/site/crew-technician-equipment.jpg", alt: "COSBEL Ltd technician in safety gear beside electrical equipment" },
+  { src: "/images/site/control-panel-breakers.jpg", alt: "Industrial control panel with circuit breakers and colour-coded wiring" },
+  { src: "/images/site/distribution-board-breakers.jpg", alt: "Electrical distribution board with circuit breakers and labelled wiring" },
+  { src: "/images/site/earthing-pit-copper.jpg", alt: "Copper earth conductor in an inspection pit during earthing installation" },
+  { src: "/images/site/earthing-rod-joint.jpg", alt: "Copper earthing rod joint prepared in an earth pit" },
+  { src: "/images/site/earthing-joint-pit.jpg", alt: "Earth conductor joint in a pit during grounding works" },
+  { src: "/images/site/earthing-cable-joint.jpg", alt: "Copper cable joint in an earthing pit at a construction site" },
+  { src: "/images/site/crew-laying-cable-trench.jpg", alt: "COSBEL Ltd technicians laying power cable in an excavated trench" },
+  { src: "/images/site/cable-pulling-trench.jpg", alt: "Technician pulling power cable through a deep trench" },
+  { src: "/images/site/underground-cable-trench.jpg", alt: "Underground power cable laid in a prepared trench" },
+  { src: "/images/site/cable-trench-channels.jpg", alt: "Concrete cable trench channels at a substation site" },
+  { src: "/images/site/cable-trench-structures.jpg", alt: "Cable trench running between steel structures at a substation" },
+  { src: "/images/site/substation-site-crane.jpg", alt: "Crane lifting equipment at a substation construction site" },
+];
 
 // Only entries with confirmed: true are published. Set the rest to true once COSBEL Ltd confirms them.
 export const services = [
@@ -154,9 +193,9 @@ export const projects: {
       { value: "100%", label: "Completed" },
     ],
     images: [
-      { src: "https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=80", alt: "Compact substation installation at an industrial site" },
-      { src: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=1200&q=80", alt: "Underground power cables and switchgear in a factory" },
-      { src: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80", alt: "Industrial control panel and transfer switch wiring" },
+      { src: "/images/site/substation-under-construction.jpg", alt: "Compact substation installation at an industrial site" },
+      { src: "/images/site/transformer-hv-connection-work.jpg", alt: "Underground power cables and switchgear in a factory" },
+      { src: "/images/site/rmu-interior-busbars.jpg", alt: "Industrial control panel and transfer switch wiring" },
     ],
   },
   {
@@ -172,9 +211,9 @@ export const projects: {
       { value: "100%", label: "Documented" },
     ],
     images: [
-      { src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80", alt: "Power distribution system design for a factory" },
-      { src: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80", alt: "Electrical engineering drawings and switchgear" },
-      { src: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80", alt: "Power system design documentation" },
+      { src: "/images/site/substation-yard-structures.jpg", alt: "Power distribution system design for a factory" },
+      { src: "/images/site/ring-main-unit.jpg", alt: "Electrical engineering drawings and switchgear" },
+      { src: "/images/site/cable-trench-structures.jpg", alt: "Power system design documentation" },
     ],
   },
   {
@@ -190,9 +229,9 @@ export const projects: {
       { value: "100%", label: "Documented" },
     ],
     images: [
-      { src: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80", alt: "Distribution transformer inspection" },
-      { src: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=80", alt: "Electrical equipment inspection at an industrial site" },
-      { src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80", alt: "Engineer inspecting electrical equipment" },
+      { src: "/images/site/transformer-hv-bushings.jpg", alt: "Distribution transformer inspection" },
+      { src: "/images/site/transformer-rmu-plinth.jpg", alt: "Electrical equipment inspection at an industrial site" },
+      { src: "/images/site/substation-steel-structures.jpg", alt: "Engineer inspecting electrical equipment" },
     ],
   },
 ];
