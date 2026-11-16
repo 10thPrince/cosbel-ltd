@@ -1,5 +1,7 @@
 type Photo = { src: string; alt: string; w: number; h: number };
 
+const FALLBACK_SITE_URL = "https://cosbel-ltd.vercel.app";
+
 export const company = {
   name: "COSBEL Ltd",
   phone: "+250 788 312 434", tel: "tel:+250788312434",
@@ -7,14 +9,15 @@ export const company = {
   tin: "122484737", // printed on the letterhead but kept off the public site by design
   location: "Kimironko, Gasabo, Kigali, Rwanda",
   // A missing site URL would silently point every canonical, sitemap entry and
-  // schema @id at the wrong domain, so a production build must fail loudly instead.
+  // schema @id at the wrong domain. In dev we fall back to localhost; on Vercel
+  // previews the Production-scoped env var isn't available, so fall back to the
+  // live domain with a warning rather than failing the build.
   site: (() => {
     const raw = process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "");
     if (raw) return raw;
-    if (process.env.NODE_ENV === "production") {
-      throw new Error("NEXT_PUBLIC_SITE_URL is not set. Set it in .env (e.g. NEXT_PUBLIC_SITE_URL=https://your-domain.com) and rebuild: canonical URLs, the sitemap and all structured data depend on it.");
-    }
-    return "http://localhost:3000";
+    if (process.env.NODE_ENV !== "production") return "http://localhost:3000";
+    console.warn("NEXT_PUBLIC_SITE_URL is not set; falling back to " + FALLBACK_SITE_URL + ". Set it in Vercel (all environments) so canonical URLs, the sitemap and structured data use the real domain.");
+    return FALLBACK_SITE_URL;
   })(),
 };
 // Real COSBEL site photos (client's Drive, GPS data stripped, optimized for web).
