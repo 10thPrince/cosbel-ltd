@@ -203,12 +203,12 @@ export const projects: {
     metrics: [
       { value: "1", label: "Compact substation" },
       { value: "3", label: "Generators managed" },
-      { value: "100%", label: "Completed" },
+      { value: "100%", label: "Completed" }
     ],
     images: [
       { src: "/images/site/compac-worker.jpg", alt: "A Compac substation being Installed to an Industry by a COSBEL Ltd Crew" },
       { src: "/images/site/crew2.jpg", alt: "COSBEL Ltd technicians installing the power change over" },
-       { src: "/images/site/crew3.jpg", alt: "COSBEL Ltd technicians intalling the baking industries' oven" },
+      { src: "/images/site/crew3.jpg", alt: "COSBEL Ltd technicians intalling the baking industries' oven" }
     ],
   },
   {
@@ -221,13 +221,13 @@ export const projects: {
     metrics: [
       { value: "2", label: "Independent supplies" },
       { value: "4", label: "Operating modes" },
-      { value: "100%", label: "Documented" },
+      { value: "100%", label: "Documented" }
     ],
     images: [
       { src: "/images/site/crew-transformer-top.jpg", alt: "COSBEL Ltd technicians working on top of a transformer unit" },
-       { src: "/images/site/substation-steel-structures.jpg", alt: "Engineer inspecting electrical equipment" },
-      { src: "/images/site/cable-trench-structures.jpg", alt: "Power system design documentation" },
+      { src: "/images/site/substation-steel-structures.jpg", alt: "Engineer inspecting electrical equipment" },
+      { src: "/images/site/cable-trench-structures.jpg", alt: "Power system design documentation" }
     ],
   },
-  ,
+  
 ];
