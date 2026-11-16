@@ -15,15 +15,15 @@ export const metadata: Metadata = {
     keywords: ["electrical engineering company Kigali", "substation installation Rwanda", "ATS manufacturer Rwanda", "industrial electrical services Rwanda", "residential electrical installation Kigali", "electrician Kigali", "COSBEL Ltd"] }),
   title: { absolute: "Electrical Services in Kigali, Rwanda | COSBEL Ltd" },
 };
-const chips = ["Industrial, residential & commercial", "Installation & maintenance", "Based in Kimironko, Kigali"];
+const chips = ["Industrial, residential & commercial", "Installation & maintenance", "Based in Rwanda"];
 export default function Home() {
   return (<>
     <JsonLd data={{ "@context": "https://schema.org", "@type": "WebSite", name: "COSBEL Ltd", url: abs("/"), publisher: { "@id": bizId() }, inLanguage: "en" }} />
     <section className="bg-gradient-to-b from-mist to-white py-16 md:py-24"><div className={`${ui.wrap} grid items-center gap-12 lg:grid-cols-2`}>
       <div className="motion-safe:animate-fade-up">
-        <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-1.5 text-sm font-semibold text-brand shadow-sm"><span className="h-2 w-2 rounded-full bg-accent" />Kimironko, Kigali, Rwanda</p>
+        <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-line bg-white px-4 py-1.5 text-sm font-semibold text-brand shadow-sm"><span className="h-2 w-2 rounded-full bg-green-500" />Kigali, Rwanda</p>
         <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-brand sm:text-5xl lg:text-6xl">Professional Electrical Solutions You Can Rely On.</h1>
-        <p className="mt-5 max-w-xl text-lg text-fg/70">COSBEL Ltd provides electrical services for industrial facilities, residential properties, commercial buildings, and other electrical project requirements across its service areas.</p>
+        <p className="mt-5 max-w-xl text-lg text-fg/70"><strong>COSBEL Ltd</strong> provides electrical services for industrial facilities, residential properties, commercial buildings, and other electrical project requirements across its service areas.</p>
         <div className="mt-8 flex flex-wrap gap-3.5"><Link className={ui.btn} href="/contact#quote">Request a Quote</Link><Link className={ui.btnOutline} href="/services">Explore Our Services</Link></div>
         <ul className="mt-8 grid list-none gap-2 p-0 text-sm font-semibold text-fg/80">{chips.map((c) => <li key={c} className="flex items-center gap-2"><span className="grid h-5 w-5 place-items-center rounded-full bg-brand2/10 text-brand2"><Icon name="check" className="h-3.5 w-3.5" /></span>{c}</li>)}</ul></div>
       <div className="relative">
@@ -44,7 +44,7 @@ export default function Home() {
     <section className={ui.sec}><div className={`${ui.wrap} grid items-center gap-12 lg:grid-cols-2`}>
       <Image src={photos.transformer.src} alt={photos.transformer.alt} width={photos.transformer.w} height={photos.transformer.h} sizes="(min-width:1024px) 560px, 100vw" className="aspect-[4/3] w-full rounded-3xl object-cover shadow-xl" />
       <div><p className={ui.eyebrow}>About COSBEL Ltd</p><h2 className={ui.h2}>A Rwandan electrical services company</h2>
-        <p className="mb-6 text-fg/70">COSBEL Ltd is based in Kimironko, Gasabo, Kigali. We work with industrial facilities, households, commercial buildings and other customers who need dependable electrical solutions, and we keep each project clear from first call to handover.</p>
+        <p className="mb-6 text-fg/70">COSBEL Ltd is based in Kigali. We work with industrial facilities, households, commercial buildings and other customers who need dependable electrical solutions, and we keep each project clear from first call to handover.</p>
         <Link className={ui.btn} href="/about">Learn More About Us</Link></div></div></section>
 
     <section className={ui.secAlt}><div className={ui.wrap}>
