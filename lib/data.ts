@@ -7,7 +7,7 @@ export const company = {
   phone: "+250 788 312 434", tel: "tel:+250788312434",
   email: "smackreime@gmail.com", mailto: "mailto:smackreime@gmail.com",
   tin: "122484737", // printed on the letterhead but kept off the public site by design
-  location: "Kimironko, Gasabo, Kigali, Rwanda",
+  location: "Kigali, Rwanda",
   // A missing site URL would silently point every canonical, sitemap entry and
   // schema @id at the wrong domain. In dev we fall back to localhost; on Vercel
   // previews the Production-scoped env var isn't available, so fall back to the
