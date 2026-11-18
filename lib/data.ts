@@ -163,12 +163,7 @@ export const gallerySections: GallerySection[] = [
       { src: "/images/site/tx-radiator-closeup.jpg", alt: "Distribution transformer radiator and tank during service" },
       { src: "/images/site/tx-lv-busbars.jpg", alt: "Colour-coded low-voltage busbars above a distribution transformer" },
       { src: "/images/site/tx-indoor-installation.jpg", alt: "Indoor distribution transformer with high-voltage connections" },
-      { src: "/images/site/transformer-rmu-plinth.jpg", alt: "Transformer and ring main unit mounted on a concrete plinth" },
-      { src: "/images/site/transformer-hv-bushings.jpg", alt: "Distribution transformer with high-voltage bushings on a steel structure" },
-      { src: "/images/site/transformer-hv-connection-work.jpg", alt: "Technicians making high-voltage connections on a transformer" },
-      { src: "/images/site/crew-scaffold-transformer.jpg", alt: "COSBEL crew working from scaffolding on transformer installation" },
-      { src: "/images/site/hv-bushing-connection-work.jpg", alt: "Technician connecting a high-voltage bushing on a transformer" },
-      { src: "/images/site/crew-transformer-top.jpg", alt: "COSBEL technicians working on top of a transformer unit" },
+
     ],
   },
   {
