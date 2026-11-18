@@ -23,9 +23,9 @@ export const company = {
 // Real COSBEL site photos (client's Drive, GPS data stripped, optimized for web).
 export const photos: Record<string, Photo> = {
   board: { src: "/images/site/distribution-board-breakers.jpg", w: 1600, h: 1200, alt: "COSBEL Ltd electrical distribution board with circuit breakers and neatly routed wiring" },
-  tray: { src: "/images/site/underground-cable-trench.jpg", w: 1200, h: 1600, alt: "Underground power cable laid in a prepared trench at a COSBEL Ltd work site" },
+  tray: { src: "/images/site/cable-wall-entry-termination.jpg", w: 1200, h: 1600, alt: "Underground power cable laid in a prepared trench at a COSBEL Ltd work site" },
   switchgear: { src: "/images/site/ring-main-unit.jpg", w: 1200, h: 1600, alt: "Ring main unit installed at an industrial substation in Rwanda" },
-  powerSupply: { src: "/images/site/industrial.jpg.jpeg", w: 1200, h: 1600, alt: "Ring main unit installed at an industrial substation in Rwanda" },
+  powerSupply: { src: "/images/site/earth-facility-interconnection.jpg", w: 1200, h: 1600, alt: "Ring main unit installed at an industrial substation in Rwanda" },
   control: { src: "/images/site/control-panel-breakers.jpg", w: 1200, h: 1600, alt: "Industrial control panel with circuit breakers and colour-coded wiring wired by COSBEL Ltd" },
   transformer: { src: "/images/site/transformer-hv-bushings.jpg", w: 1200, h: 1600, alt: "Distribution transformer with high-voltage bushings installed on a steel structure" },
   compac: { src: "/images/site/compact-substation1.jpg", w: 1200, h: 1600, alt: "Distribution transformer with high-voltage bushings installed on a steel structure" },
@@ -245,7 +245,7 @@ export const services = [
     seoDesc: "Electrical installations for offices, shops and commercial buildings in Kigali, Rwanda. Talk to COSBEL Ltd about your premises.",
     keywords: ["commercial electrical installation Kigali", "office electrical Kigali", "commercial electrician Rwanda"],
     applications: ["Offices", "Shops and business premises", "Commercial buildings"] },
-  { slug: "installation-and-maintenance", title: "Electrical Installation and Maintenance", tag: "Maintenance", confirmed: true, photo: photos.wiring,
+  { slug: "installation-and-maintenance", title: "Electrical Installation and Maintenance", tag: "Maintenance", confirmed: true, photo: photos.crew2,
     short: "Installation and ongoing maintenance of electrical systems.",
     body: "Installation of electrical systems and maintenance to keep them working safely.",
     seoTitle: "Electrical Maintenance Services in Kigali",
