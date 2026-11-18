@@ -8,7 +8,7 @@ export async function POST(req: Request) {
   const r = await fetch("https://api.resend.com/emails", {
     method: "POST", headers: { Authorization: `Bearer ${key}`, "Content-Type": "application/json" },
     body: JSON.stringify({
-      from: process.env.CONTACT_FROM || "COSBEL Website <onboarding@resend.dev>", to: ["smackreime@gmail.com"], reply_to: d.email,
+      from: process.env.CONTACT_FROM || "COSBEL Website <onboarding@resend.dev>", to: ["smack@cosbelelectrical.com"], reply_to: d.email,
       subject: `Quote request: ${esc(d.service)} from ${esc(d.name)}`,
       html: `<p><b>Name:</b> ${esc(d.name)}<br><b>Phone:</b> ${esc(d.phone)}<br><b>Email:</b> ${esc(d.email)}<br><b>Service:</b> ${esc(d.service)}<br><b>Location:</b> ${esc(d.location || "-")}</p><p>${esc(d.message)}</p>`,
     }),

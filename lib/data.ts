@@ -5,7 +5,7 @@ const FALLBACK_SITE_URL = "https://cosbel-ltd.vercel.app";
 export const company = {
   name: "COSBEL Ltd",
   phone: "+250 788 312 434", tel: "tel:+250788312434",
-  email: "smackreime@gmail.com", mailto: "mailto:smackreime@gmail.com",
+  email: "smack@cosbelelectrical.com", mailto: "mailto:smack@cosbelelectrical.com",
   tin: "122484737", // printed on the letterhead but kept off the public site by design
   location: "Kigali, Rwanda",
   // A missing site URL would silently point every canonical, sitemap entry and

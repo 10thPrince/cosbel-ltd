@@ -6,7 +6,7 @@ import { company, photos } from "@/lib/data";
 import { pageMeta, abs, bizId } from "@/lib/seo";
 import { ui } from "@/lib/ui";
 export const metadata = pageMeta({ title: "Contact & Electrical Quote in Kigali", path: "/contact",
-  description: "Contact COSBEL Ltd in Kimironko, Kigali. Call +250 788 312 434, email smackreime@gmail.com or request an electrical services quote online.",
+  description: "Contact COSBEL Ltd in Kimironko, Kigali. Call +250 788 312 434, email smack@cosbelelectrical.com or request an electrical services quote online.",
   keywords: ["contact electrician Kigali", "electrical quote Kigali", "COSBEL Ltd contact"] });
 const a = "text-brand2 hover:underline";
 export default function Contact() {
