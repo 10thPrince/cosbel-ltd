@@ -40,6 +40,6 @@ export default function ContactForm() {
     <button className={`${ui.btn} disabled:opacity-60`} disabled={status === "sending"}>{status === "sending" ? "Sending…" : "Send request"}</button>
     <p role="status" aria-live="polite">
       {status === "ok" && "Thank you. Your request was sent and COSBEL Ltd will reply by phone or email."}
-      {status === "fail" && "Your request could not be sent. Please call +250 788 312 434 or email smack@cosbelelectrical.com."}</p>
+      {status === "fail" && "Your request could not be sent. Please call +250 788 312 434 or email professional@cosbelelectrical.com."}</p>
   </form>);
 }
